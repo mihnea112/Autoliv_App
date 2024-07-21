@@ -1,0 +1,149 @@
+/* _content/BlazorApplication2/Shared/MainLayout.razor.rz.scp.css */
+.page[b-mhrje6rfz9] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-mhrje6rfz9] {
+    flex: 1;
+}
+
+.sidebar[b-mhrje6rfz9] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-mhrje6rfz9] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-mhrje6rfz9]  a, .top-row .btn-link[b-mhrje6rfz9] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-mhrje6rfz9] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-mhrje6rfz9] {
+        display: none;
+    }
+
+    .top-row.auth[b-mhrje6rfz9] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-mhrje6rfz9], .top-row .btn-link[b-mhrje6rfz9] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-mhrje6rfz9] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-mhrje6rfz9] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-mhrje6rfz9] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-mhrje6rfz9], article[b-mhrje6rfz9] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/BlazorApplication2/Shared/NavMenu - Copy.razor.rz.scp.css */
+.sidebar[b-s7lhu4py2f] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.navbar-toggler[b-s7lhu4py2f] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-s7lhu4py2f] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-s7lhu4py2f] {
+    font-size: 1.1rem;
+}
+
+.oi[b-s7lhu4py2f] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+    margin-left:10px;
+}
+
+
+
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-s7lhu4py2f] {
+        display: none;
+    }
+
+    .collapse[b-s7lhu4py2f] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+/* _content/BlazorApplication2/Shared/NavMenu.razor.rz.scp.css */
+.sidebar[b-pvyvocb7rk] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.navbar-toggler[b-pvyvocb7rk] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-pvyvocb7rk] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-pvyvocb7rk] {
+    font-size: 1.1rem;
+}
+
+.oi[b-pvyvocb7rk] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+    margin-left: 10px;
+}
+
+
+
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-pvyvocb7rk] {
+        display: none;
+    }
+
+    .collapse[b-pvyvocb7rk] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

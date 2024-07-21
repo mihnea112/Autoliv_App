@@ -1,0 +1,13 @@
+﻿@using BlazorApplication2.Data
+@inject UsersRepo UserService
+@page "/admin"
+<h3>Admin Component</h3>
+
+@if(UserService.Logged!=0)
+{
+    <MudAlert> You are logged in</MudAlert>
+}
+else
+{
+    <MudAlert>You are NOT logged in</MudAlert>
+}

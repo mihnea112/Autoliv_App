@@ -1,0 +1,66 @@
+﻿@page "/Tip cerere"
+@using System.Diagnostics
+@using BlazorApplication2.Data
+@inject UsersRepo Userservice
+@inject CereriRepo CereriService
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+
+<h3>Tip Cerere </h3>
+
+    
+<MudButton style= "width:300px" @onclick="OpenDialog" Variant="Variant.Filled" Color="Color.Primary">
+    Selecteaza tipul cererii
+</MudButton>
+
+@foreach (var cerere in CereriService.CereriAfisate)
+{
+    <MudText>@cerere</MudText>
+}
+
+@code {
+    public async void OpenDialog()
+    {
+        DialogOptions closeOnEscapeKey = new DialogOptions() { CloseOnEscapeKey = true };
+
+        var dialog = DialogService.Show<DialogComponent>("Selecteaza tipul cererii", closeOnEscapeKey);
+        var result = await dialog.Result;
+        Debug.WriteLine(result.Cancelled);
+
+        if(result.Cancelled != true)
+        {
+            SelectData();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await SelectData();
+    }
+
+    private async Task SelectData()
+    {
+        CereriService.StringFinal = "";
+        var ress = await Userservice.SelectByLoginId(Userservice.Logged);
+        if(ress.data != null)
+        {
+            var res = await CereriService.SelectCereriByFluturasId(ress.data.Id);
+            if(res.exx == null)
+            {
+                CereriService.data = res.val;
+                CereriService.CereriAfisate.Clear();
+                var TextStates = new List<string>()
+                {
+                    "In asteptare",
+                    "Aprobat",
+                    "Respins"
+                };
+                foreach (Cereri val in CereriService.data)
+                {
+                    CereriService.CereriAfisate.Add(val.Tip_Cerere + " " + val.Data1.Value.ToShortDateString() + " " + val.Data2.Value.ToShortDateString() + " " + TextStates[val.Status]);
+                }
+            }
+        }
+        await InvokeAsync(StateHasChanged);
+    }
+}

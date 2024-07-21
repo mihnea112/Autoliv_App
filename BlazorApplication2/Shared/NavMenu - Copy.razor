@@ -1,0 +1,50 @@
+﻿@using BlazorApplication2.Data
+@inject UsersRepo UserService
+@inject NavigationManager NavManager
+@using MudBlazor
+
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Aplicatie salarizare</a>
+        <button title="Navigation menu" class="navbar-toggler" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+
+<MudPaper Width="250px" Class="py-3"   Elevation="0" Style = "@($"color:{Colors.Shades.White}; background:{Colors.Shades.Transparent};")">
+
+    <MudNavMenu Style="@($"color:{Colors.Shades.White}; background:{Colors.Shades.Transparent};")">
+
+        <MudNavLink Href="/admin"><span class="oi oi-home" aria-hidden="true"></span> Home </MudNavLink>
+
+        <MudNavGroup Title="Meniu" Style="@($"color:{Colors.Shades.White}; background:{Colors.Shades.Transparent};")" Expanded="false">
+            <MudNavLink Href="/Fluturas">Fluturas</MudNavLink>
+            <MudNavLink Href="/Tip cerere">Tip Cerere</MudNavLink>
+            <MudNavLink Href="/Info">Info</MudNavLink>
+        </MudNavGroup>
+        @if (UserService.Logged == 1)
+        {
+            <MudNavLink Href="/add"><span class="oi oi-eye" aria-hidden="true"></span> Add </MudNavLink>
+            <MudNavLink Href="/mata"><span class="oi oi-eye" aria-hidden="true"></span> Cereri </MudNavLink>
+        }
+        <MudNavLink @onclick="@Logout"><span class="oi oi-account-logout" aria-hidden="true"></span> Logout</MudNavLink>
+
+    </MudNavMenu> 
+    
+</MudPaper>
+
+
+@code {
+
+    public void Logout()
+    {
+        
+        UserService.Logged = 0;                  //in loc de false
+        NavManager.NavigateTo(" ");
+
+    }
+    private MudTheme Theme = new MudTheme();
+}

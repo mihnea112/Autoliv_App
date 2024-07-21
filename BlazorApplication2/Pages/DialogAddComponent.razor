@@ -1,0 +1,42 @@
+﻿@using BlazorApplication2.Data
+@using System.Diagnostics
+@inject NavigationManager NavManager
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+@inject Tip_cerereRepo tipcerereRepo
+@inject UsersRepo UserService 
+@inject CereriRepo CereriService
+
+<MudDialog> 
+    <DialogContent>
+                    <MudTextField Label="Nume" @bind-Value="@ct.Nume" />
+                    <MudTextField Label="Prenume" Class="mt-3" @bind-Value="@ct.Prenume" />
+                    <MudTextField Label="Functie" Class="mt-3" @bind-Value="@ct.Functie" />
+                    <MudTextField Label="Salariu" Class="mt-3" @bind-Value="@ct.Salariu" InputType="InputType.Number" />           
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Submit</MudButton>
+    </DialogActions>
+</MudDialog>
+
+
+@code {
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+    [Parameter] public int id { get; set; }
+    void Submit()
+    {
+        AddAll();
+    }
+    void Cancel() => MudDialog.Cancel();
+    private Users ct = new Users();
+    private async void AddAll()
+    {
+        var res = await UserService.AddAllByAdmin(ct,id);
+        if(res.err==null)
+        {
+            MudDialog.Close(DialogResult.Ok(true));
+        }
+    }
+}
+

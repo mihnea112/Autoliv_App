@@ -1,0 +1,68 @@
+﻿
+@inject NavigationManager NavManager
+@inject UsersRepo UserService   // inject il folosesc ca sa "chem" clasa cu functiile (add, delete..)
+@page "/login"
+@using BlazorApplication2.Data
+<h3>Login</h3> 
+
+
+<MudGrid>
+    <MudItem xs="12" sm="7">
+        <MudPaper Class="pa-4">
+            <MudForm>
+                    <MudTextField T="string" Label="Username" Required="true" RequiredError="User name is required!" @bind-Value="@ct.Username"/>
+                    <MudTextField T="string" Label="Password" HelperText="Choose a strong password" InputType="InputType.Password"  RequiredError="Password is required!" @bind-Value="@ct.Password"/>
+                     
+                   
+                    <div class="d-flex align-center justify-space-between">
+                       <MudButton Variant="Variant.Filled" Color="Color.Secondary"  Class="ml-auto" Href = "/Register">Register</MudButton>
+                       <MudButton Variant="Variant.Filled" Color="Color.Primary"  Class="ml-auto" @onclick="@SelectUser">Login</MudButton>
+                    </div>
+
+            </MudForm>   
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+@if(prost)
+{
+   <MudText Typo ="Typo.h5" > You forgot your pasword </MudText>
+}
+@code{
+    private Users ct = new Users();                                  //variabila pt a colecta datele din login
+    private Users date = new Users();                               // variabila pt a colecta datele din sql
+    public bool prost = false;
+
+
+
+
+    private async void SelectUser()
+    {
+        var res = await UserService.SelectByUsername(ct.Username);
+        if ( res.err == null)                                           //daca nu e eroare
+        {
+            date = res.data;                                            //in date se va pune rezultatul.
+            if (date.Password ==ct.Password)                            //verificare daca parola din sql este la fel cu cea formularul introdus
+            {
+                
+
+                LogedUser.User = date;
+                NavManager.NavigateTo("/admin");                        // te redirectioneaza in pagina de admin
+                prost = false;
+                UserService.Logged = date.Id;                           // prin user sevice apelez variabila logged din clasa userrepo
+            }
+            else
+            {
+                prost = true;
+            }
+        }
+        else
+        {
+            Console.WriteLine(res.err);
+        }
+
+        
+
+    }
+
+}

@@ -1,0 +1,58 @@
+﻿@using BlazorApplication2.Data
+@using System.Diagnostics
+@inject NavigationManager NavManager
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+@inject Tip_cerereRepo tipcerereRepo
+@inject UsersRepo UserService 
+@inject CereriRepo CereriService
+
+<MudDialog> 
+    <DialogContent >
+        <MudSelect T="string" Label="Tip cerere" AnchorOrigin="Origin.BottomCenter" @bind-Value="ct.Tip_Cerere">
+            <MudSelectItem Value="@("Concediu odihna")" />
+            <MudSelectItem Value="@("Concediu fara plata")" />
+            <MudSelectItem Value="@("Concediu special in alte situatii prevazute de lege")" />
+            <MudSelectItem Value="@("Invoire in interes personal")" />
+            <MudSelectItem Value="@("Delegatie in interes de serviciu")" />
+
+        </MudSelect>
+        <MudDateRangePicker Label="Durata:" @bind-DateRange="_dateRange" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Submit</MudButton>
+    </DialogActions>
+</MudDialog>
+
+
+@code {
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    Tip_cerere cerere = new Tip_cerere();
+
+
+    void Submit()
+    {
+        AddAll();
+    }
+    void Cancel() => MudDialog.Cancel();
+    MudDateRangePicker _picker;
+    DateRange _dateRange = new DateRange(DateTime.Now.Date, DateTime.Now.AddDays(5).Date);
+    private Cereri ct = new Cereri();
+    private async void AddAll()
+    {
+        ct.Id_fluturas = UserService.Logged;
+        ct.Data1 = _dateRange.Start;
+        ct.Data2 = _dateRange.End;
+        ct.Status = 0;
+        var res = await CereriService.AddCerere(ct);
+        if (res.exx == null)
+        {
+            Debug.WriteLine("gata boss");
+            await InvokeAsync(StateHasChanged);
+        }
+        MudDialog.Close(DialogResult.Ok(true));
+    }
+}
+

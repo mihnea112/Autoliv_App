@@ -1,0 +1,112 @@
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\appsettings.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.staticwebassets.runtime.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.exe
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.deps.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.runtimeconfig.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.pdb
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Blazored.Modal.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Dapper.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\MudBlazor.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.csproj.AssemblyReference.cache
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.AssemblyInfoInputs.cache
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.AssemblyInfo.cs
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.csproj.CoreCompileInputs.cache
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.RazorAssemblyInfo.cache
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.RazorAssemblyInfo.cs
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\bundle\BlazorApplication2.styles.css
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\projectbundle\BlazorApplication2.bundle.scp.css
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.csproj.CopyComplete
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\refint\BlazorApplication2.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.pdb
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.genruntimeconfig.cache
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\ref\BlazorApplication2.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\Shared\NavMenu - Copy.razor.rz.scp.css
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Buttons.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Core.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Popups.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Spinner.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.SplitButtons.dll
+C:\Users\gabriela.gherghinoiu\source\repos\Gabriela\Gabi Application with Blazor\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.csproj.AssemblyReference.cache
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.AssemblyInfoInputs.cache
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.AssemblyInfo.cs
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.csproj.CoreCompileInputs.cache
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.RazorAssemblyInfo.cache
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.RazorAssemblyInfo.cs
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\appsettings.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.staticwebassets.runtime.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.exe
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.deps.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.runtimeconfig.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\BlazorApplication2.pdb
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Blazored.Modal.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Dapper.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\MudBlazor.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Buttons.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Core.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Popups.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.Spinner.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Blazor.SplitButtons.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\Shared\NavMenu - Copy.razor.rz.scp.css
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\bundle\BlazorApplication2.styles.css
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\scopedcss\projectbundle\BlazorApplication2.bundle.scp.css
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.csproj.CopyComplete
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\refint\BlazorApplication2.dll
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.pdb
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\BlazorApplication2.genruntimeconfig.cache
+C:\Users\dan.mos\Desktop\BlazorApplication2\BlazorApplication2\obj\Debug\net6.0\ref\BlazorApplication2.dll

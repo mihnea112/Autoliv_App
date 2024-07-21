@@ -1,0 +1,45 @@
+﻿@page "/Register"
+@using BlazorApplication2.Data
+@inject NavigationManager NavManager
+@inject UsersRepo UserService   // inject il folosesc ca sa "chem" clasa cu functiile (add, delete..)
+<h3>Register</h3>
+
+
+<MudGrid>
+    <MudItem xs="12" sm="7">
+        <MudPaper Class="pa-4">
+            <MudForm>
+                    <MudTextField T="string" Label="Username" Required="true" RequiredError="Username is required!" @bind-Value="@ct.Username"/>
+                    <MudTextField T="string" Label="Password" HelperText="Choose a strong password" InputType="InputType.Password"  RequiredError="Password is required!" @bind-Value="@ct.Password"/>
+                    <MudTextField T="string" Label=" Repeat Password" HelperText="Choose a strong password" InputType="InputType.Password" @bind-Value="@verf_pass"/>
+                     
+                   
+                    <div class="d-flex align-center justify-space-between">
+                       <MudButton Variant="Variant.Filled" Color="Color.Secondary"  Class="ml-auto"  @onclick ="AddUser" Href = "/Register">Register</MudButton>
+                    </div>
+
+
+            </MudForm>   
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+
+@code {
+    private Users ct = new Users();
+    private string verf_pass = null;
+    private async void AddUser()
+    {
+        if (ct.Password ==verf_pass)
+        {
+            var res = await UserService.AddUserAsync(ct);
+            if (res.err == null)
+            {
+                NavManager.NavigateTo("/login");
+            }
+            else
+                Console.WriteLine(res.err);
+        }
+    }
+
+}

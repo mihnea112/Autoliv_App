@@ -1,0 +1,50 @@
+﻿@page "/mata"
+@using System.Diagnostics
+@using BlazorApplication2.Data
+@inject UsersRepo Userservice
+@inject CereriRepo CereriService
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+
+<h3>Cereri</h3>
+
+
+@foreach (var cerere in CereriService.data)
+{
+    <MudText>@cerere.Tip_Cerere @cerere.Data1.Value.ToShortDateString() @cerere.Data2.Value.ToShortDateString()</MudText>
+    <MudButton @onclick="() => Aprobare(cerere.Id)">Aproba</MudButton>
+    <MudButton @onclick="() => Respingere(cerere.Id)">Respinge</MudButton>
+}
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await SelectData();
+    }
+
+    private async Task SelectData()
+    {
+        CereriService.StringFinal = "";
+        var res = await CereriService.SelectAllCereri();
+        if (res.exx == null)
+        {
+            CereriService.data = res.val;
+            CereriService.CereriAfisate.Clear();
+            foreach (Cereri val in CereriService.data)
+            {
+                CereriService.CereriAfisate.Add(val.Id + " " + val.Tip_Cerere + " " + val.Data1.Value.ToShortDateString() + " " + val.Data2.Value.ToShortDateString() + " " + val.Status);
+            }
+        }
+        await InvokeAsync(StateHasChanged);
+    }
+    public async void Aprobare(int id)
+    {
+        CereriService.EditStatusById(id, 1);
+        await SelectData();
+    }
+    public async void Respingere(int id)
+    {
+        CereriService.EditStatusById(id, 2);
+        await SelectData();
+    }
+}

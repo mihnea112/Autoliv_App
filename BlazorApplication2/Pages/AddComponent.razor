@@ -1,0 +1,49 @@
+﻿@page "/add"
+
+
+@inject UsersRepo UserService
+@inject NavigationManager NavManager
+@using BlazorApplication2.Data
+@using System.Diagnostics
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+
+
+<h3>Add Component</h3>
+
+@foreach (Users da in ct)
+{
+    <MudText>@da.Username</MudText>
+    <MudButton @onclick="() => OpenDialogg(da.Id)">Add</MudButton>
+}
+@code {
+    private List<Users> ct = new List<Users>();
+    protected override async Task OnInitializedAsync()
+    {
+        await SelectData();
+    }
+
+    private async Task SelectData()
+    {
+        var res = await UserService.SelectForAdd();
+        if (res.err == null)
+        {
+            ct = res.data;
+        }
+        await InvokeAsync(StateHasChanged);
+    }
+    public async void OpenDialogg(int id)
+    {
+        DialogOptions closeOnEscapeKey = new DialogOptions() { CloseOnEscapeKey = true };
+        var para = new DialogParameters();
+        para.Add("Id", id);
+        var dialog = DialogService.Show<DialogAddComponent>("Add", para, closeOnEscapeKey);
+        var result = await dialog.Result;
+        Debug.WriteLine(result.Cancelled);
+
+        if (result.Cancelled != true)
+        {
+            SelectData();
+        }
+    }
+}

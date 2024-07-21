@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+@using BlazorApplication2.Data
+@inject UsersRepo UserService
+
+
+<PageTitle>BlazorApplication2</PageTitle>
+
+<div class="page">
+    @if (UserService.Logged != 0)
+    {<div class="sidebar">
+            <NavMenu___Copy/>
+        </div>
+    }
+    else
+    {<div class="sidebar">
+            <NavMenu/>
+        </div>
+    }
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<MudThemeProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>

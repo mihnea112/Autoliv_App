@@ -1,0 +1,187 @@
+﻿@page "/Fluturas"
+
+@inject UsersRepo UserService 
+@using BlazorApplication2.Data
+
+
+<style>
+    #fluturas {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+        #fluturas td, #fluturas th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #fluturas tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #fluturas tr:hover {
+            background-color: #ddd;
+        }
+
+        #fluturas th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .calcul {
+            backgorund-color: white;
+        }
+
+
+        .calcul h5{
+            margin-left: 25px;
+        }
+
+        .net {
+            background-color: green;
+        }
+</style>
+
+
+
+<h3>Fluturas electronic</h3>
+
+<table id="fluturas">
+    <tr>
+        <td>
+            <h4 >Nume</h4>
+        </td>
+        <td>
+            <h4>@data.Nume</h4>                                                   @*data.nume folosesc pt a a lua datele, scriere*@
+        </td>
+    </tr>
+
+     <tr>
+        <td>
+            <h4> Prenume</h4>
+        </td>
+        <td>
+            <h5>@data.Prenume</h5>                                                
+        </td>
+    </tr>
+
+     <tr>
+        <td>
+            <h4> Functie</h4>
+        </td>
+        <td>
+            <h4>@data.Functie</h4>                                                 
+        </td>
+    </tr>
+
+     <tr>
+        <td>
+            <h4> Salariu brut </h4>
+        </td>
+        <td>
+            <h4>@data.Salariu</h4>                                                
+        </td>
+    </tr>
+
+
+
+    <tr class="calcul">
+        <td>
+            <h5 > Asigurari Sociale (CAS)  </h5>
+        </td>
+        <td>
+            <h6>@CAS</h6>                                                
+        </td>
+    </tr>
+
+    <tr class="calcul">
+        <td>
+            <h5> Asigurari Sociale de Sanatate (CASS) </h5>
+        </td>
+        <td>
+            <h6>@CASS</h6>                                                
+        </td>
+    </tr>
+
+   <tr class="calcul">
+        <td>
+            <h5> Deducere personala (DP) </h5>
+        </td>
+        <td>
+            <h6>@DP</h6>                                                
+        </td>
+    </tr>
+
+    <tr class="calcul">
+        <td>
+            <h5> Impozit pe venit (IV)</h5>
+        </td>
+        <td>
+            <h6>@IMP_VENIT</h6>                                                
+        </td>
+    </tr>
+
+
+
+    <tr class= "net">
+        <td>
+            <h4> Salariu net</h4>
+        </td>
+        <td>
+            <h4>@SALARIU_NET</h4>                                                
+        </td>
+    </tr>
+</table>
+
+
+
+
+@code {
+    private Users data = new Users();
+    private bool _loading;
+    public int CAS = 0;
+    public int CASS = 0;
+    public int IMP_VENIT = 0;
+    public int DP = 0;
+    public int SALARIU_NET = 0;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await SelectData();
+        CAS = 25 * data.Salariu / 100;
+        CASS = 10* data.Salariu/100;
+
+
+        if(data.Salariu >3600)
+        {
+            DP=0;
+        }
+        else
+        {
+            DP = (3650 - data.Salariu) / 49 * 15;
+        }
+
+        SALARIU_NET = data.Salariu - CAS - CASS -DP;
+        IMP_VENIT = 10 * SALARIU_NET/ 100;
+        SALARIU_NET = data.Salariu  - (CAS+ CASS + IMP_VENIT);
+
+    }
+    private async Task SelectData()
+    {
+        var res = await UserService.SelectByLoginId(UserService.Logged);
+
+        if (res.err== null)
+        {
+            data = res.data;
+        }
+
+
+    }
+
+}
+ 
